@@ -1,0 +1,112 @@
+body {
+  background-color: #635959;
+  color: #ffffff;
+  font-family: "Mountain Hills", sans-serif;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.square {
+  background-color: #655959;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.menu a {
+  margin-right: 10px;
+  color: #66fcf1;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.menu a:hover {
+  color: #c5c6c7;
+}
+
+.hidden {
+  display: none;
+}
+
+.rotate-image {
+  animation: rotate 4s linear infinite;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.zoom-image {
+  animation: zoom 4s infinite alternate;
+}
+
+@keyframes zoom {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.2);
+  }
+}
+
+.translate-image {
+  animation: translate 4s infinite alternate;
+}
+
+@keyframes translate {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(20px);
+  }
+}
+
+nav {
+  background-color: #1f2833;
+  color: #ffffff;
+  font-family: "Mountain Hills", sans-serif;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu li {
+  margin-right: 20px;
+}
+
+.menu a {
+  display: block;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.menu a:hover {
+  color: #66fcf1;
+}
